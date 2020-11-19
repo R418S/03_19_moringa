@@ -1,0 +1,172 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+main{
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+input,textarea{
+    margin: 3%;
+    width: 95%;
+    font-size:80%;
+    box-shadow: 3px 3px 3px 3px #555;
+}
+input{
+    height: 30px;
+}
+textarea{
+    height: 230px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */ 
+  }
+  
+  main {
+    overflow-x: hidden;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .slide {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-align: start;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    color: #fff;
+  }
+  
+  .slide:nth-child(1) {
+    background-color: #ea5021;
+  }
+  
+  .slide:nth-child(2) {
+    background-color: black;
+  }
+  
+  .slide:nth-child(3) {
+    background-color: #eab31e;
+  }
+  
+  .slide-img-area {
+    width: 45%;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .cover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide:nth-child(1) .cover-img {
+    background-color: #ea5021;
+  }
+  
+  .slide:nth-child(2) .cover-img {
+    background-color: #2996D2;
+  }
+  
+  .slide:nth-child(3) .cover-img {
+    background-color: #eab31e;
+  }
+  
+  .slide-img {
+    width: 100%;
+  }
+  
+  .slide-text {
+    position: relative;
+    width: 45%;
+  }
+  
+  .slide-text h2 {
+    font-size: 3rem;
+  }
+  
+  .slide-text p {
+    font-size: 1.5rem;
+  }
+  
+  .cover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide:nth-child(1) .cover-text {
+    background-color: #ea5021;
+  }
+  
+  .slide:nth-child(2) .cover-text {
+    background-color: #2996D2;
+  }
+  
+  .slide:nth-child(3) .cover-text {
+    background-color: #eab31e;
+  }
+  
+  @media (max-width: 768px) {
+    .slide {
+      width: 100%;
+      padding: 0 16px;
+    }
+  
+    .slide-img-area {
+      width: 100%;
+    }
+  
+    .slide-text {
+      width: 100%;
+    }
+  }
