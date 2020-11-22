@@ -29,16 +29,5 @@ sliders.forEach(slide => {
   //   name: "slider"
   // });
 })  
-//1.Save クリックイベント
-$('#save').on('click', function () { 
-  var title=$('#input').val();
-  var text=$('#title_area').val();
-  var obj ={
-      "title":title,
-      "text":text
-  };
-  var json=JSON.stringify(obj);
-  localStorage.setItem('memo02',json)
-});
 
 

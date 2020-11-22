@@ -50,7 +50,7 @@
         </a>
     </div>
 
-    <div class="container bg-white py-5 my-5">
+    <div class="container bg-white">
         <!--モリンガオイルの特徴-->
         <div id="column">
           <h2 class="text-center py-3">Moring Oilの特徴</h2>
@@ -245,7 +245,7 @@
             </div>
             <div class="col-12 mb-3">
               <label for="validationCustom02">名前</label>
-              <input name="entry.88768733" type="text" class="form-control" id="validationCustom02" required>
+              <input name="entry.88768733" type="text" class="form-control" id="validationCustom01" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -272,7 +272,7 @@
           </div>
           
           <p>
-            <input type="submit" name="submit" value="送信" />
+            <input class="submit" type="submit" name="submit" value="送信" />
             <input type="submit" formnovalidate="formnovalidate" name="save" value="一時保存" />
           </p>
                     <!-- <button class="btn btn-primary" type="submit">Submit form</button> -->
@@ -309,8 +309,8 @@
   
              //1.Save クリックイベント
               $('#save').on('click', function () { 
-                  var title=$('#entry.2114262126').val();
-                  var text=$('#entry.88768733').val();
+                  var title=$('validationCustom01').val();
+                  var text=$('validationCustom02').val();
                   // var text=$('#title_area').val();
                   var obj ={
                       "title":title,
